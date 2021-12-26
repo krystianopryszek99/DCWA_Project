@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>SPID</th>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let salesperson of salespeople">
+        <td>{{ salesperson.spid }}</td>
+        <td>{{ salesperson.name }}</td>
+        <td>
+            <button (click)="update(salesperson.spid)">Update</button>
+            <button (click)="salespersonDetails(salesperson.spid)">Delete</button>
+        </td>
+    </tr>
+    {{ error }}
+</table>
+<nav>
+    <a routerLink="newSalesperson">New Salesperson</a>
+</nav>

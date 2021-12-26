@@ -1,0 +1,10 @@
+<form>
+    SPID: <input type="text" name="spid" [(ngModel)]="salesperson.spid">
+    Name: <input type="text" name="name" [(ngModel)]="salesperson.name">
+    <br>
+    <button (click)="onSave(salesperson.spid, salesperson.name)">Save</button>
+    <br>
+    <br>
+    {{ error }}
+</form>
+   

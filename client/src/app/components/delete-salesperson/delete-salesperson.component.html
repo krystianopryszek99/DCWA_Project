@@ -1,0 +1,13 @@
+<h2>Delete this salesperson?</h2>
+
+<b>SPID: </b> {{ salesperson.spid }}
+<br>
+<br>
+<b>Name: </b> {{ salesperson.name }}
+<br>
+<br>
+<button (click)="delete(salesperson.spid)">Yes</button>
+<button routerLink="/salespeople">No</button>
+<br>
+
+{{ error }}
